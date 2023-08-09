@@ -1,0 +1,84 @@
+/* #CABAC8-Thistle */
+/* #FF101F-RED */
+/* #B2DDF7-URANIAN BLUE */
+/* #81D6E3-NON PHOTO BLUE */
+/* #4CB5AE-VERDIGRIS */
+
+/* This is the css for the grid container for the form. Hopefully it makes the items go horizontal on the page. */
+/* If I put a "." in from of 'form', it will strech the entire page width no matter what width I type in. */
+form{
+    margin: auto;
+    width:1175px ;
+    border:1px solid black;
+    
+}
+/* This is my attempt at styling the form */
+/* .grid-container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr; this also creates 7 equal columns
+    grid-template-rows: 50px;
+} */
+
+/* This is chatgpt attempt at styling the form */
+/* This is needed for the week days to spread even with the '.daystrainging. cause it to work better. so I guess this is the basis of the grid */
+.grid-containers{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);  /* this creates 7 equal columns */
+    align-items: center;  
+    gap:40px;/* this adds some space between the grid items*/
+
+}
+
+/* Okay, so this is what allowing me to make the weekday spread accross the form. Took me way too long but figured it out.  */
+.daystraining{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 30px; 
+    align-items: center;
+    gap:20px;
+    padding-left: 2em;
+}
+
+/* This is the first row of input items. This row will be used to input exercises.  */
+.exercise{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 30px;
+
+}
+
+.weight{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 30px;
+
+}
+
+.reps{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 30px;
+
+}
+
+.sets{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 30px;
+
+}
+
+
+
+/* This targets all of the input boxes */
+input[type=text]{
+    color: red;
+    
+}
+
+
+
+
+body{
+    background-color: #CABAC8;
+}
