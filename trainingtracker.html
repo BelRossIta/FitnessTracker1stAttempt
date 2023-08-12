@@ -27,14 +27,25 @@
             <form action="trainingtrackerverified.html" method="get">
                 <!-- This is my grid container for styling my form. -->
                 <div class="gridcontainer">
-                    <div>
-                        <label for="startdate">Start Date:</label>
-                        <input type="date" name="startdate" id="startdate">
-                    </div>
-                    <div>
-                        <label for="enddate">End Date:</label>
-                        <input type="date" name="enddate" id="enddate">
-                    </div>
+                        <div>
+                            <label for="startdate">Start Date:</label>
+                            <input type="date" name="startdate" id="startdate">
+                        </div>
+                        <div>
+                            <label for="enddate">End Date:</label>
+                            <input type="date" name="enddate" id="enddate">
+                        </div>
+                        <div class="topbutton1" >
+                            <div>
+                                <button class="reset" type="button"> Reset</button>
+                            </div>
+                        </div>
+                        <div class="topbutton2">
+                            <div>
+                                <button class="add" type="button">Add 1 more Week</button>
+                            </div>
+                        </div>
+                
                     <hr>
                     <h2>Week 1</h2>
                     <!-- This is my grid item for styling my form. I hope to be able to have this go horizontal on the page -->
@@ -52,7 +63,7 @@
                         </div>
                         <div class="exercise">
                             <label for="rowOne">Enter Exercise Here:</label>
-                            <input type="text" name="postweekend" id="postweekend" placeholder="Add Exercise Here">
+                            <input type="text" name="postweekend" id="postweekend" >
                             <input type="text" name="weekdayone" id="weekdayone" >
                             <input type="text" name="weekdaytwo" id="weekdaytwo">
                             <input type="text" name="weekdaythree" id="weekdaythree">
@@ -62,7 +73,7 @@
                         </div>
                         <div class="weight">
                             <label for="rowTwo">Enter Weight Here:</label>
-                            <input type="text" name="postweekend" id="postweekend" placeholder="Add Weight(lb) here">
+                            <input type="text" name="postweekend" id="postweekend" >
                             <input type="text" name="weekdayone" id="weekdayone">
                             <input type="text" name="weekdaytwo" id="weekdaytwo">
                             <input type="text" name="weekdaythree" id="weekdaythree">
@@ -72,7 +83,7 @@
                         </div>
                         <div class="reps">
                             <label for="rowThree">Enter Reps Here:</label>
-                            <input type="text" name="postweekend" id="postweekend" placeholder="Add Reps Here">
+                            <input type="text" name="postweekend" id="postweekend" >
                             <input type="text" name="weekdayone" id="weekdayone">
                             <input type="text" name="weekdaytwo" id="weekdaytwo">
                             <input type="text" name="weekdaythree" id="weekdaythree">
@@ -82,7 +93,7 @@
                         </div>
                         <div class="sets">
                             <label for="rowFour">Enter Sets Here:</label>
-                            <input type="text" name="postweekend" id="postweekend" placeholder="Add Sets Here">
+                            <input type="text" name="postweekend" id="postweekend" ">
                             <input type="text" name="weekdayone" id="weekdayone">
                             <input type="text" name="weekdaytwo" id="weekdaytwo">
                             <input type="text" name="weekdaythree" id="weekdaythree">
@@ -90,25 +101,63 @@
                             <input type="text" name="preweekend" id="preweekend">
                             <input type="text" name="weekend" id="weekend">
                         </div>
-
-                     
-                 
-                        <!-- <div class="griditem">
-                            <div class="griditem-labels">
-                                <label for="workouts"> WorksOuts:</label>
-                                <input type="text" name="workouts" id="workouts">
-                            </div >
-                            <div>
-                                <label for="weight">Weight:</label>
-                                <input type="text" name="weight" id="weight">
-                            </div>
-                            <div>
-                                <label for="sets">Sets:</label>
-                                <input type="text" name="sets" id="sets">
-                            </div> -->
-                                       
                   
                 </div>
+                        <hr>
+                        <h2>Week 2</h2>
+                        <!-- This is the second week of the workout form -->
+                        
+                            <!-- Listing them like this makes them horizontal. -->
+                            <div class="daystraining">
+                                <label for="days">&nbsp; </label>
+                                <label for="sunday">Sunday</label>
+                                <label for="monday">Monday</label>
+                                <label for="tuesday">Tuesday</label>
+                                <label for="wednesday">Wednesday</label>
+                                <label for="thursday">Thursday</label>
+                                <label for="friday">Friday</label>
+                                <label for="saturday">Saturday</label>
+                            </div>
+                            <div class="exercise">
+                                <label for="rowOne">Enter Exercise Here:</label>
+                                <input type="text" name="postweekend" id="postweekend" >
+                                <input type="text" name="weekdayone" id="weekdayone" >
+                                <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                <input type="text" name="weekdaythree" id="weekdaythree">
+                                <input type="text" name="humpday" id="humpday">
+                                <input type="text" name="preweekend" id="preweekend">
+                                <input type="text" name="weekend" id="weekend">
+                            </div>
+                            <div class="weight">
+                                <label for="rowTwo">Enter Weight Here:</label>
+                                <input type="text" name="postweekend" id="postweekend" >
+                                <input type="text" name="weekdayone" id="weekdayone">
+                                <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                <input type="text" name="weekdaythree" id="weekdaythree">
+                                <input type="text" name="humpday" id="humpday">
+                                <input type="text" name="preweekend" id="preweekend">
+                                <input type="text" name="weekend" id="weekend">
+                            </div>
+                            <div class="reps">
+                                <label for="rowThree">Enter Reps Here:</label>
+                                <input type="text" name="postweekend" id="postweekend" >
+                                <input type="text" name="weekdayone" id="weekdayone">
+                                <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                <input type="text" name="weekdaythree" id="weekdaythree">
+                                <input type="text" name="humpday" id="humpday">
+                                <input type="text" name="preweekend" id="preweekend">
+                                <input type="text" name="weekend" id="weekend">
+                            </div>
+                            <div class="sets">
+                                <label for="rowFour">Enter Sets Here:</label>
+                                <input type="text" name="postweekend" id="postweekend" >
+                                <input type="text" name="weekdayone" id="weekdayone">
+                                <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                <input type="text" name="weekdaythree" id="weekdaythree">
+                                <input type="text" name="humpday" id="humpday">
+                                <input type="text" name="preweekend" id="preweekend">
+                                <input type="text" name="weekend" id="weekend">
+                            </div>
 
 
 

@@ -10,6 +10,10 @@ h1{
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
+
 header{
     border: 5px double rgb(20, 20, 97);
     background-color: #81D6E3 ;
@@ -44,8 +48,7 @@ form{
 /* This is needed for the week days to spread even with the '.daystrainging. cause it to work better. so I guess this is the basis of the grid */
 .grid-containers{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);  /* this creates 7 equal columns */
-    align-items: center;  
+    grid-template-columns: repeat(8, 1fr);  /* this creates 7 equal columns */  
     gap:40px;/* this adds some space between the grid items*/
 
 }
@@ -92,6 +95,19 @@ form{
     grid-template-rows: 30px;
     margin: 3px;
 
+}
+
+/* ----------Button styling---------------- */
+/* Float moves elements from left to right or right to left on the page or in a form */
+.topbutton1{
+   float:right;
+   margin-top: -2.5em;
+
+}
+
+.topbutton2{
+    float:right;
+    margin-top: -1em
 }
 
 
