@@ -97,6 +97,41 @@ form{
 
 }
 
+/* This is week two divs */
+
+.exercise2{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 30px;
+    margin: 3px;
+    
+
+}
+
+.weight2{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 30px;
+    margin: 3px;
+
+}
+
+.reps2{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 30px;
+    margin: 3px;
+
+}
+
+.sets2{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 30px;
+    margin: 3px;
+
+}
+
 /* ----------Button styling---------------- */
 /* Float moves elements from left to right or right to left on the page or in a form */
 .topbutton1{
