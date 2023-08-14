@@ -184,7 +184,7 @@
                                 addWeek.addEventListener("click", function(){
                                     let tempDiv = document.createElement("div");
                                     if (addOne){
-                                        addOne.insertAdjacentElement("afterend", tempDiv);
+                                        addOne.insertAdjacentElement("beforeend", tempDiv);
                                     }
                                     setListener(tempDiv);
                                 })
@@ -192,12 +192,12 @@
 
                                 function setListener(elem){
                                     elem.addEventListener("click", function(){
-                                        const allElems = docuement.querySelectorAll("section div");
+                                        const allElems = document.querySelectorAll("section div");
                                         for (let i = 0; i< allElems.length; i++){
-                                            allElms[i].style.border = "3px solid black";
+                                            allElems[i].style.border = "3px solid black";
                                         }
                                         elem.style.border ="3px solid green";
-                                        activeElem = elem;
+                                        addOne = elem;
                                     })
                                  
                                 }
