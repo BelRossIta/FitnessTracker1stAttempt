@@ -46,7 +46,8 @@
                                     <div>
                                         <!-- This connects to a function in the javascript file -->
                                         <!-- <input type="button" id="add" value="Add 1 more Week" > -->
-                                        <button type="button" id="add" class="add">Add 1 more Week</button>
+                                        <!-- onclick="plusOne() calls the function to be activated by the button onclick" -->
+                                        <button type="button" id="add" class="add" onclick=" plusContent()">Add 1 more Week</button>
                                         
                                         
                                     </div>
@@ -114,9 +115,10 @@
                                 
                                 </div>
                                         <hr>
-                                        <h2>Week 2</h2>
+                                        
                                         <!-- This is the second week of the workout form -->
-                                        <section>
+                                        <div class="this">
+                                            <h2>Week 2</h2>
                                             <!-- Listing them like this makes them horizontal. -->
                                             <div class="daystraining">
                                                 <label for="days">&nbsp; </label>
@@ -173,31 +175,67 @@
                                                    
                                                 </div>
                                             </div>
-                                        </section>
+                                            <div class="output1">
+
+                                            </div>
+                                            <script>
+                                                //    var btn = document.getElementById("add")
+                                
+                                                //    function plusOne(){
+                                                //     var addWeek = document.getElementsByClassName("things");
+                                                // //     // This loop prints out the entire week
+                                                //         for(var another of addWeek){
+                                                //             document.write(another.innerHTML);
+                                                //         }
+                                                //     }
+                                                // //    This adds and event listener which when you press the button, it
+                                                // // actives the plusOne function.
+                                                //    btn.addEventListener("click", plusOne);
+                                
+                                                // function plusOne(){
+                                                  
+
+                                                //     var addWeek = document.createElement("div");
+                                                //     addWeek.style.backgroundColor="yellow";
+                                                //     addWeek.style.border="solid 3px black";
+                                                //     addWeek.style.gridTemplateColumns.repeat=("8,1fr");
+                                                //     addWeek.style.gridTemplateRows="100px";
+                                                //     addWeek.style.padding="3px"; 
+                                                                                     
+                                                //     // This puts the div that I have created at the bottom of the form
+                                                //     // after the button is clicked to add another div on it.
+                                                //     document.querySelector(".output1").appendChild(addWeek);
+                                                //     document.querySelector(".output1").innerHTML; 
+                                                // }
+                                               
+                                                function plusContent(){
+                                                    var currentWeek = document.querySelector(".this");
+                                                    var newWeek = currentWeek.cloneNode(true);
+                                                    
+                                                    var weeks= document.querySelector(".this");
+                                                    var weekNumber = weeks.length + 1;
+
+                                                    var newWeekHeader = newWeek.querySelector("h2");
+                                                    newWeekHeader.textContent = "Week" +  weekNumber;
+
+                                                    var outputDiv = document.querySelector(".output1");
+                                                    outputDiv.appendChild(newWeek);
+
+                                                }
+                                                </script>
+                                
+                                        </div>
+                                       
                                            
                             </div>
-                            <script>
-                               var btn = document.getElementById("add")
-
-                               function plusOne(){
-                                var addWeek = document.getElementsByClassName("things");
-                            //     // This loop prints out the entire week
-                                    for(var another of addWeek){
-                                        document.write(another.innerHTML);
-                                    }
-                                }
-                            //    This adds and event listener which when you press the button, it
-                            // actives the plusOne function.
-                               btn.addEventListener("click", plusOne);
                            
-                            </script>
-            
                 <div>
                     <!-- <hr>
                     <button class="submit" type="button" >Confirm</button>
                 </div> -->
                
             </form>
+           
             
         </div>
           
