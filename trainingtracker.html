@@ -172,7 +172,7 @@
                             </div>
                             <script>
                                 // const is block level that can't be used again later on
-                                const plusWeek = document.querySelector('.sets2');
+                                const plusWeek = document.querySelector('div.sets2');
                                 
                                 //let is a block level variable that can be used later on again.
                                 let addingWeek;
@@ -185,9 +185,14 @@
                                     setListener(tempDiv);
                                 }
 
-                                // function setListener(addWeek){
-                                //     addWeek.addEventListener('click,' function())
-                                // }
+                                function setListener(addWeek){
+                                    addWeek.addEventListener('click,' function()){
+                                        const allWeek = document.querySelectorAll('section div');
+                                        for (let 1 = 0; 1 < allWeek.item; i++) {
+                                            allWeek[i].style.border = '3px solid black';
+                                        }
+                                    }
+                                }
 
 
 
