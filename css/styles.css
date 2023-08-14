@@ -17,6 +17,7 @@ h2{
 header{
     border: 5px double rgb(20, 20, 97);
     background-color: #81D6E3 ;
+    border-style: double;
 }
 
 body{
@@ -145,5 +146,26 @@ form{
     margin-top: -1em
 }
 
+/* ------------creating and styling navbar--------------- */
 
 
+/* Style the links in the nav menu */
+.pillnav a{
+    color:rgb(93, 24, 150) ;
+    display:inline-block;
+    color:darkblue;
+    text-align: center;
+    padding:10px;
+    font-size:17px;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.pillnav a:hover{
+    background-color: white;   
+}
+
+.pillnav a.active{
+   background-color: rgb(82, 168, 82);
+   color: rgb(247, 193, 112); 
+}
