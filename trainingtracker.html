@@ -45,8 +45,9 @@
                                     <div>
                                         <!-- This connects to a function in the javascript file -->
                                         <!-- <input type="button" id="add" value="Add 1 more Week" > -->
-                                        <!-- <button type="button" onclick="insertElement()">Add 1 more Week</button> -->
-                                        <button type="button" id="add" class="add">Add 1 week</button>
+                                        <button type="button" id="add" class="add">Add 1 more Week</button>
+                                        
+                                        
                                     </div>
                                 </div>
                         
@@ -66,7 +67,7 @@
                                             <label for="friday">Friday</label>
                                             <label for="saturday">Saturday</label>
                                         </div>
-                                        <section>
+                                        <section class="things">
                                             <div class="exercise">
                                                     <label for="rowOne">Enter Exercise Here:</label>
                                                     <input type="text" name="postweekend" id="postweekend" >
@@ -114,7 +115,7 @@
                                         <hr>
                                         <h2>Week 2</h2>
                                         <!-- This is the second week of the workout form -->
-                                        
+                                        <section>
                                             <!-- Listing them like this makes them horizontal. -->
                                             <div class="daystraining">
                                                 <label for="days">&nbsp; </label>
@@ -146,7 +147,7 @@
                                                 <input type="text" name="preweekend" id="preweekend">
                                                 <input type="text" name="weekend" id="weekend">
                                             </div>
-                                            <div id="">
+                                            <div id="closeToEnd">
                                                 <div class="reps2">
                                                     <label for="rowThree">Enter Reps Here:</label>
                                                     <input type="text" name="postweekend" id="postweekend" >
@@ -171,51 +172,23 @@
                                                    
                                                 </div>
                                             </div>
+                                        </section>
                                            
                             </div>
                             <script>
-                                // variable to find the add button
-                                const addWeek = document.querySelector(".add");
-                                // variable to find the section I have wrapped
-                                const container = document.querySelector("section")
+                               var btn = document.getElementById("add")
 
-                                let activeElem;
-
-                                addWeek.addEventListener("click", function(){
-                                    let tempDiv = document.createElement("div");
-                                    if (activeElem){
-                                        activeElem.insertAdjacentElement("beforeend", tempDiv);
-                                    } else{
-                                        container.appendChild(tempDiv);
+                               function plusOne(){
+                                var addWeek = document.getElementsByClassName("things");
+                            //     // This loop prints out the entire week
+                                    for(var another of addWeek){
+                                        document.write(another.innerHTML);
                                     }
-                                    setListener(tempDiv);
-                                })
-
-
-                                function setListener(elem){
-                                    elem.addEventListener("click", function(){
-                                        const allElems = document.querySelectorAll("section div");
-                                        for (let i = 0; i< allElems.length; i++){
-                                            allElems[i].style.border = "3px solid black";
-                                        }
-                                        elem.style.border ="3px solid green";
-                                        activeElem = elem;
-                                    })
-                                 
                                 }
-
-                                function init() {
-                                    const initElems = document.querySelectorAll("section div");
-                                    for (let i = 0; i < initElems.length; i++){
-                                        setListener(initElems[i])
-                                    }
-                                };
-
-                                init();
-
-
-                                
-            
+                            //    This adds and event listener which when you press the button, it
+                            // actives the plusOne function.
+                               btn.addEventListener("click", plusOne);
+                           
                             </script>
             
                 <div>
