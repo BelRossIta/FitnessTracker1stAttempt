@@ -179,12 +179,14 @@
                                 // variable to find the section I have wrapped
                                 const container = document.querySelector("section")
 
-                                let addOne;
+                                let activeElem;
 
                                 addWeek.addEventListener("click", function(){
                                     let tempDiv = document.createElement("div");
-                                    if (addOne){
-                                        addOne.insertAdjacentElement("beforeend", tempDiv);
+                                    if (activeElem){
+                                        activeElem.insertAdjacentElement("beforeend", tempDiv);
+                                    } else{
+                                        container.appendChild(tempDiv);
                                     }
                                     setListener(tempDiv);
                                 })
@@ -197,7 +199,7 @@
                                             allElems[i].style.border = "3px solid black";
                                         }
                                         elem.style.border ="3px solid green";
-                                        addOne = elem;
+                                        activeElem = elem;
                                     })
                                  
                                 }
