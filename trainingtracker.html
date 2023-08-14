@@ -180,7 +180,7 @@
                                 plusWeek.addEventListener('click', function() {
                                     let tempDiv = document.createElement('div');
                                     if (addingWeek) {
-                                        addingWeek.insertAdjacentElement('beforeend', tempDiv);
+                                        addingWeek.insertAdjacentElement('afterend', tempDiv);
                                     } else{
                                         document.getElementById('weeks').appendChild(tempDiv);
                                     }
@@ -189,13 +189,13 @@
 
                                 function setListener(addWeek){
                                     addWeek.addEventListener('click', function() {
-                                        const allWeek = document.querySelectorAll('#weeks > div');
-                                        for (let i = 0; i < allWeek.length; i++) {
-                                            allWeek[i].style.border = '3px solid black';
+                                        const allWeeks = document.querySelectorAll('#weeks > div');
+                                        for (let i = 0; i < allWeeks.length; i++) {
+                                            allWeeks[i].style.border = '3px solid black';
                                         }
                                         addWeek.style.border = '3px solid aqua';
                                         addingWeek = addWeek;
-                                    })
+                                    });
                                 }
 
 
@@ -205,20 +205,20 @@
 
 
 
-                                // function insertElement(){
+                            //     function insertElement(){
                                               
                                     
-                                //     // This sort of works----Attempt 1-----
-                                //     // // Select the target element
-                                //     var divExercise = document.getElementById("lastRow");
+                            //         // This sort of works----Attempt 1-----
+                            //         // // Select the target element
+                            //         var divExercise = document.getElementById("lastRow");
 
-                                //     // // inserting html just before the element itself, as a previous sibling
-                                //     divExercise.insertAdjacentHTML('beforeend', '<h2>Week 3</h2>');
+                            //         // // inserting html just before the element itself, as a previous sibling
+                            //         divExercise.insertAdjacentHTML('beforeend', '<h2>Week 3</h2>');
                                  
-                                // }
+                            //     }
                                 
             
-                            </script>
+                            // </script>
             
                 <div>
                     <!-- <hr>
