@@ -177,21 +177,23 @@
                                 //let is a block level variable that can be used later on again.
                                 let addingWeek;
 
-                                plusWeek.addEventListener('click', function()) {
+                                plusWeek.addEventListener('click', function() {
                                     let tempDiv = document.createElement('div');
                                     if (addingWeek) {
                                         addingWeek.insertAdjacentElement('beforeend', tempDiv);
                                     }
                                     setListener(tempDiv);
-                                }
+                                });
 
                                 function setListener(addWeek){
-                                    addWeek.addEventListener('click,' function()){
+                                    addWeek.addEventListener('click,' function(){
                                         const allWeek = document.querySelectorAll('section div');
                                         for (let 1 = 0; 1 < allWeek.item; i++) {
                                             allWeek[i].style.border = '3px solid black';
                                         }
-                                    }
+                                        addWeek.style.border = '3px solid aqua';
+                                        addingWeeek = addWeek;
+                                    })
                                 }
 
 
