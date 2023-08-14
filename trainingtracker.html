@@ -45,7 +45,8 @@
                                     <div>
                                         <!-- This connects to a function in the javascript file -->
                                         <!-- <input type="button" id="add" value="Add 1 more Week" > -->
-                                        <button type="button" onclick="insertElement()">Add 1 more Week</button>
+                                        <!-- <button type="button" onclick="insertElement()">Add 1 more Week</button> -->
+                                        <button type="button" id="add" class="add">Add 1 Week</button> 
                                     </div>
                                 </div>
                         
@@ -170,24 +171,40 @@
                                            
                             </div>
                             <script>
-                                function insertElement(){
+                                // const is block level that can't be used again later on
+                                const plusWeek = document.querySelector('.add');
+                                
+                                //let is a block level variable that can be used later on again.
+                                let addingWeek;
 
-                                    // var newDiv = document.createElement("div");
-
-                                    // var newContent = document.createElement("input");
-
-                                    // newDiv.appendChild(newContent);
-
-                                    // var currentDiv = document.getElementById("output")
-
-                                    // document.forms.appendChild(newDiv, currentDiv);
-                                    // Select the target element
-                                    var divExercise = document.getElementById("lastRow");
-
-                                    // inserting html just before the element itself, as a previous sibling
-                                    divExercise.insertAdjacentHTML('beforeend', '<h2>Week 3</h2>');
-                                 
+                                plusWeek.addEventListener('click', function() {
+                                    let tempDiv = document.createElement('div');
+                                    if (addingWeek) {
+                                        addingWeek.insertAdjacentElement('beforeend', tempDiv);
+                                    }
+                                    setListener(tempDiv);
                                 }
+
+                                // function setListener()
+
+
+
+
+
+
+
+
+                                // function insertElement(){
+                                              
+                                    
+                                //     // This sort of works----Attempt 1-----
+                                //     // // Select the target element
+                                //     var divExercise = document.getElementById("lastRow");
+
+                                //     // // inserting html just before the element itself, as a previous sibling
+                                //     divExercise.insertAdjacentHTML('beforeend', '<h2>Week 3</h2>');
+                                 
+                                // }
                                 
             
                             </script>
