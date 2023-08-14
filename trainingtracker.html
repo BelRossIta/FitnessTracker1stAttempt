@@ -171,6 +171,55 @@
                                            
                                         </section>
                            
+                                        <script>
+                                            // // const is block level that can't be used again later on
+                                            // const plusWeek = document.querySelector('button.add');
+                                            
+                                            // //let is a block level variable that can be used later on again.
+                                            // let addingWeek;
+                                
+                                            // plusWeek.addEventListener('click', function() {
+                                            //     let tempDiv = document.createElement('div');
+                                            //     if (addingWeek) {
+                                            //         addingWeek.insertAdjacentElement('afterend', tempDiv);
+                                            //     } else{
+                                            //         document.getElementById('weeks').appendChild(tempDiv);
+                                            //     }
+                                            //     addingWeek = tempDiv;
+                                            // });
+                                
+                                            // function setListener(addWeek){
+                                            //     addWeek.addEventListener('click', function() {
+                                            //         const allWeeks = document.querySelectorAll('#weeks > div');
+                                            //         for (let i = 0; i < allWeeks.length; i++) {
+                                            //             allWeeks[i].style.border = '3px solid black';
+                                            //         }
+                                            //         addWeek.style.border = '3px solid aqua';
+                                            //         addingWeek = addWeek;
+                                            //     });
+                                            // }
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                            function insertElement(){
+                                                          
+                                                
+                                                // This sort of works----Attempt 1-----
+                                                // // Select the target element
+                                                var divExercise = document.getElementById("lastRow");
+                                
+                                                // // inserting html just before the element itself, as a previous sibling
+                                                divExercise.insertAdjacentHTML('beforeend', '<h2>Week 3</h2>');
+                                             
+                                            }
+                                            
+                                
+                                         </script> 
             
                 <div>
                     <!-- <hr>
@@ -180,55 +229,7 @@
             </form>
             
         </div>
-        <script>
-            // // const is block level that can't be used again later on
-            // const plusWeek = document.querySelector('button.add');
-            
-            // //let is a block level variable that can be used later on again.
-            // let addingWeek;
-
-            // plusWeek.addEventListener('click', function() {
-            //     let tempDiv = document.createElement('div');
-            //     if (addingWeek) {
-            //         addingWeek.insertAdjacentElement('afterend', tempDiv);
-            //     } else{
-            //         document.getElementById('weeks').appendChild(tempDiv);
-            //     }
-            //     addingWeek = tempDiv;
-            // });
-
-            // function setListener(addWeek){
-            //     addWeek.addEventListener('click', function() {
-            //         const allWeeks = document.querySelectorAll('#weeks > div');
-            //         for (let i = 0; i < allWeeks.length; i++) {
-            //             allWeeks[i].style.border = '3px solid black';
-            //         }
-            //         addWeek.style.border = '3px solid aqua';
-            //         addingWeek = addWeek;
-            //     });
-            // }
-
-
-
-
-
-
-
-
-            function insertElement(){
-                          
-                
-                // This sort of works----Attempt 1-----
-                // // Select the target element
-                var divExercise = document.getElementById("lastRow");
-
-                // // inserting html just before the element itself, as a previous sibling
-                divExercise.insertAdjacentHTML('beforeend', '<h2>Week 3</h2>');
-             
-            }
-            
-
-        // </script>  
+       
     </body>
     <footer>
         <small>&copy; 2023-2024. Created and Designed By Belita Ross</small>
