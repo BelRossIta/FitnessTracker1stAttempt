@@ -177,7 +177,7 @@
                                 //let is a block level variable that can be used later on again.
                                 let addingWeek;
 
-                                plusWeek.addEventListener('click', function() {
+                                plusWeek.addEventListener('click', function()) {
                                     let tempDiv = document.createElement('div');
                                     if (addingWeek) {
                                         addingWeek.insertAdjacentElement('beforeend', tempDiv);
@@ -185,7 +185,9 @@
                                     setListener(tempDiv);
                                 }
 
-                                // function setListener()
+                                // function setListener(addWeek){
+                                //     addWeek.addEventListener('click,' function())
+                                // }
 
 
 
