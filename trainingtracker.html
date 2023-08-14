@@ -51,7 +51,7 @@
                                 </div>
                         
                             <hr>
-                            <div id="output">
+                            <section id ="weeks">
                                     <h2>Week 1</h2>
                                     <!-- This is my grid item for styling my form. I hope to be able to have this go horizontal on the page -->
                                     
@@ -169,10 +169,10 @@
                                                 </div>
                                             </div>
                                            
-                            </div>
+                                        </section>
                             <script>
                                 // const is block level that can't be used again later on
-                                const plusWeek = document.querySelector('div.sets2');
+                                const plusWeek = document.querySelector('button.add');
                                 
                                 //let is a block level variable that can be used later on again.
                                 let addingWeek;
@@ -181,18 +181,20 @@
                                     let tempDiv = document.createElement('div');
                                     if (addingWeek) {
                                         addingWeek.insertAdjacentElement('beforeend', tempDiv);
+                                    } else{
+                                        document.getElementById('weeks').appendChild(tempDiv);
                                     }
-                                    setListener(tempDiv);
+                                    addingWeek = tempDiv;
                                 });
 
                                 function setListener(addWeek){
-                                    addWeek.addEventListener('click,' function(){
-                                        const allWeek = document.querySelectorAll('section div');
-                                        for (let 1 = 0; 1 < allWeek.item; i++) {
+                                    addWeek.addEventListener('click', function() {
+                                        const allWeek = document.querySelectorAll('#weeks > div');
+                                        for (let i = 0; i < allWeek.length; i++) {
                                             allWeek[i].style.border = '3px solid black';
                                         }
                                         addWeek.style.border = '3px solid aqua';
-                                        addingWeeek = addWeek;
+                                        addingWeek = addWeek;
                                     })
                                 }
 
