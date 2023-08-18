@@ -114,10 +114,11 @@
                                         </section>
                                 
                                 </div>
-                                        <hr>
+                                        
                                         
                                         <!-- This is the second week of the workout form -->
                                         <div class="this">
+                                            <hr>
                                             <h2>Week 2</h2>
                                             <!-- Listing them like this makes them horizontal. -->
                                             <div class="daystraining">
@@ -212,11 +213,14 @@
                                                     var currentWeek = document.querySelector(".this");
                                                     var newWeek = currentWeek.cloneNode(true);
                                                     
+                                                    var i = 1;
                                                     var weeks= document.querySelector(".this");
-                                                    var weekNumber = weeks.length + 1;
+                                                    var weekNumber = weeks.length + i;
 
-                                                    var newWeekHeader = newWeek.querySelector("h2");
-                                                    newWeekHeader.textContent = "Week" +  weekNumber;
+                                                    
+
+                                                    // var newWeekHeader = newWeek.querySelector("h2");
+                                                    // newWeekHeader.textContent = "Week" + " " + weekNumber;
 
                                                     var outputDiv = document.querySelector(".output1");
                                                     outputDiv.appendChild(newWeek);
