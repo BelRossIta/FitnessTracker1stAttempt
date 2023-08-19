@@ -54,7 +54,7 @@
                                 </div>
                         
                             <hr>
-                            <div id="output">
+                            <div id="weekOne">
                                     <h2>Week 1</h2>
                                     <!-- This is my grid item for styling my form. I hope to be able to have this go horizontal on the page -->
                                     
@@ -117,7 +117,7 @@
                                         
                                         
                                         <!-- This is the second week of the workout form -->
-                                        <div class="this">
+                                        <div id="weekTwo">
                                             <hr>
                                             <h2>Week 2</h2>
                                             <!-- Listing them like this makes them horizontal. -->
@@ -176,7 +176,7 @@
                                                    
                                                 </div>
                                             </div>
-                                            <div class="new-week-container">
+                                            <div id="new-week-container">
 
                                             </div>
                                             <script>
@@ -210,19 +210,21 @@
                                                 // }
                                                
                                                 function plusContent(){
-                                                    var currentWeek = document.querySelectorAll(".this");
+                                                    // This puts the div this in the variable currentWeek
+                                                    var currentWeek = document.querySelector("#weekTwo");
+                                                    // This clones the node current week and puts it into newWeek
                                                     var newWeek = currentWeek.cloneNode(true);
                                                     
-                                                  
-                                                    var weeks= document.querySelectorAll(".this");
-                                                    var weekNumber = weeks.length +1;
+                                                    
+                                                    // var weeks= document.querySelectorAll("#weekTwo");
+                                                    var weekNumber = currentWeek.length + 1 ;
 
                                                     
-
+                                                    // This is my first attempt at trying to update the header for the new week
                                                     var newWeekHeader = newWeek.querySelector("h2");
                                                     newWeekHeader.textContent = "Week" + " " + weekNumber;
 
-                                                    var outputDiv = document.querySelector(".new-week-container");
+                                                    var outputDiv = document.querySelector("#new-week-container");
                                                     outputDiv.appendChild(newWeek);
 
                                                 }
