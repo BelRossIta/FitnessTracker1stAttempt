@@ -117,11 +117,11 @@
                                         
                                         
                                         <!-- This is the second week of the workout form -->
-                                        <!-- <div id="weekTwo">
+                                        <div id="weekTwo"> 
                                             <hr>
-                                            <h2>Week 2</h2> -->
+                                            <h2>Week 2</h2> 
                                             <!-- Listing them like this makes them horizontal. -->
-                                            <!-- <div class="daystraining">
+                                            <div class="daystraining">
                                                 <label for="days">&nbsp; </label>
                                                 <label for="sunday">Sunday</label>
                                                 <label for="monday">Monday</label>
@@ -175,7 +175,7 @@
                                                     <input type="text" name="weekend" id="weekend">
                                                    
                                                 </div>
-                                            </div> -->
+                                            </div>
                                             <div id="new-week-container">
 
                                             </div>
@@ -211,19 +211,18 @@
                                                
                                                 function plusContent(){
                                                     // This puts the div this in the variable currentWeek
-                                                    var currentWeek = document.querySelector("#weekOne");
+                                                    var currentWeek = document.querySelector("#weekTwo");
                                                     // This clones the node current week and puts it into newWeek
                                                     var newWeek = currentWeek.cloneNode(true);
 
-                                                    var newHeader = NodeFilter("h2");
                                                     
                                                     
                                                     // var weeks= document.querySelectorAll("#weekOne");
-                                                    var weekNumber = currentWeek.length + 1;
+                                                    var weekNumber = newWeek.length + 1;
 
                                                     
                                                     // This is my first attempt at trying to update the header for the new week
-                                                    var newWeekHeader = newWeek.querySelector(".header");
+                                                    var newWeekHeader = newWeek.querySelector("h2");
                                                     newWeekHeader.textContent = "Week" + " " + weekNumber;
 
                                                     var outputDiv = document.querySelector("#new-week-container");
