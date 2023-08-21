@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="topbutton1" >
                                     <div>
-                                        <button class="reset" id="reset" type="button"> Reset</button>
+                                        <button class="reset" id="reset" type="button" onclick=""> Reset</button>
                                     </div>
                                 </div>
                                 <div class="topbutton2">
@@ -183,34 +183,7 @@
                                             <div id="new-week-container"></div>
                                             
                                             <script>
-                                                //    var btn = document.getElementById("add")
-                                
-                                                //    function plusOne(){
-                                                //     var addWeek = document.getElementsByClassName("things");
-                                                // //     // This loop prints out the entire week
-                                                //         for(var another of addWeek){
-                                                //             document.write(another.innerHTML);
-                                                //         }
-                                                //     }
-                                                // //    This adds and event listener which when you press the button, it
-                                                // // actives the plusOne function.
-                                                //    btn.addEventListener("click", plusOne);
-                                
-                                                // function plusOne(){
-                                                  
-
-                                                //     var addWeek = document.createElement("div");
-                                                //     addWeek.style.backgroundColor="yellow";
-                                                //     addWeek.style.border="solid 3px black";
-                                                //     addWeek.style.gridTemplateColumns.repeat=("8,1fr");
-                                                //     addWeek.style.gridTemplateRows="100px";
-                                                //     addWeek.style.padding="3px"; 
-                                                                                     
-                                                //     // This puts the div that I have created at the bottom of the form
-                                                //     // after the button is clicked to add another div on it.
-                                                //     document.querySelector(".output1").appendChild(addWeek);
-                                                //     document.querySelector(".output1").innerHTML; 
-                                                // }
+                                     
                                                
                                                 //Select some elements once outside of the function since these will never change
                                                 // 'const' is for variable that can/will not be used again later on in the code
@@ -219,7 +192,7 @@
 
                                                 const secondWeek = document.querySelector("#weekTwo");
                                                 const newWeekContainer = document.querySelector("#new-week-container");
-
+                                               
                                                 
                                                 // 'let' declares re-assignable, block-scoped local variables, optionally
                                                 // initializing each to a value
@@ -232,16 +205,20 @@
                                                     //Remove the ID for the cloned week since the same ID would not
                                                     // be allowed to exist more than once in a document!
                                                     newWeek.attributes.removeNamedItem("id");
-
-                                                    //Increase the number of weeks
+                                                    
+                                                     
+                                                     //Increase the number of weeks
                                                     //Incrementation 
                                                     currentNumberOfWeeks++;
 
                                                     //Find the header inside the new week and update the text
                                                     newWeek.querySelector("h2").textContent="Week " + currentNumberOfWeeks;
 
+                                                   
+                                                    
                                                     //Put the new week into the container 
                                                     newWeekContainer.appendChild(newWeek);
+                                       
 
                                               
 
@@ -254,10 +231,7 @@
                             </div>
                            
                 <div>
-                    <!-- <hr>
-                    <button class="submit" type="button" >Confirm</button>
-                </div> -->
-               
+                
             </form>
            
             
