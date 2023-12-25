@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Metas for the websites language and S.E.O -->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="weightlifting, exercise, exercise journal, journal, deadlifting, dead-lifing, 
+         squatting, benching, weightloss, weight-loss, weight loss journey, Belita, Belita Ross, Home gym, Fitness,
+         Fitness Tracker, tracker " />
+         <meta name="description" content="My exercise and weight-loss journal" />
+         <!-- For mobile devices -->
+         <meta name="viewport" content="device=device-width, initial-scale=1.0" />
+         <!-- Title for page -->
+         <title>Exercise Tracker</title>
+         <!-- css link -->
+         <link rel="stylesheet" a href="css/styles.css">
+         <!-- javascript link -->
+         <script src="javascript/baseJavascript.js" defer></script>
+    </head>
+    <body>
+        
+    <header ><h1>Training Tracker</h1></header>
+    <div class="pillnav">
+        <a href="index.html">Home</a>
+        <a href="trainingtracker.html">Training Tracker</a>
+        <a href="weighttracker.html">Weight Tracker</a>
+    </div>
+        <div class="main">
+            <form action="trainingtrackerverified.html" method="get" >
+                <!-- This is my grid container for styling my form. -->
+                <div id="output">
+                        <div class="gridcontainer">
+                                <div>
+                                    <label for="startdate">Start Date:</label>
+                                    <input type="date" name="startdate" id="startdate">
+                                </div>
+                                <div>
+                                    <label for="enddate">End Date:</label>
+                                    <input type="date" name="enddate" id="enddate">
+                                </div>
+                                <div class="topbutton1" >
+                                    <div>
+                                        <button class="reset" id="reset" type="button"> Reset</button>
+                                    </div>
+                                </div>
+                                <div class="topbutton2">
+                                    <div>
+                                        <!-- This connects to a function in the javascript file -->
+                                        <!-- <input type="button" id="add" value="Add 1 more Week" > -->
+                                        <!-- onclick="plusOne() calls the function to be activated by the button onclick" -->
+                                        <button type="button" id="add" class="add" onclick=" plusContent()">Add 1 more Week</button>
+                                        
+                                        
+                                    </div>
+                                </div>
+                        
+                            <hr>
+                            <div id="weekOne">
+                                    <h2 class="header">Week 1</h2>
+                                    <!-- This is my grid item for styling my form. I hope to be able to have this go horizontal on the page -->
+                                    
+                                        <!-- Listing them like this makes them horizontal. -->
+                                        <div class="daystraining">
+                                            <label for="days">&nbsp; </label>
+                                            <label for="sunday">Sunday</label>
+                                            <label for="monday">Monday</label>
+                                            <label for="tuesday">Tuesday</label>
+                                            <label for="wednesday">Wednesday</label>
+                                            <label for="thursday">Thursday</label>
+                                            <label for="friday">Friday</label>
+                                            <label for="saturday">Saturday</label>
+                                        </div>
+                                        <section class="things">
+                                            <div class="exercise">
+                                                    <label for="rowOne">Enter Exercise Here:</label>
+                                                    <input type="text" name="postweekend" id="postweekend" >
+                                                    <input type="text" name="weekdayone" id="weekdayone" >
+                                                    <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                                    <input type="text" name="weekdaythree" id="weekdaythree">
+                                                    <input type="text" name="humpday" id="humpday">
+                                                    <input type="text" name="preweekend" id="preweekend">
+                                                    <input type="text" name="weekend" id="weekend">
+                                            </div>
+                                            
+                                            <div class="weight">
+                                                <label for="rowTwo">Enter Weight Here:</label>
+                                                <input type="text" name="postweekend" id="postweekend" >
+                                                <input type="text" name="weekdayone" id="weekdayone">
+                                                <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                                <input type="text" name="weekdaythree" id="weekdaythree">
+                                                <input type="text" name="humpday" id="humpday">
+                                                <input type="text" name="preweekend" id="preweekend">
+                                                <input type="text" name="weekend" id="weekend">
+                                            </div>
+                                            <div class="reps">
+                                                <label for="rowThree">Enter Reps Here:</label>
+                                                <input type="text" name="postweekend" id="postweekend" >
+                                                <input type="text" name="weekdayone" id="weekdayone">
+                                                <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                                <input type="text" name="weekdaythree" id="weekdaythree">
+                                                <input type="text" name="humpday" id="humpday">
+                                                <input type="text" name="preweekend" id="preweekend">
+                                                <input type="text" name="weekend" id="weekend">
+                                            </div>
+                                            <div class="sets">
+                                                <label for="rowFour">Enter Sets Here:</label>
+                                                <input type="text" name="postweekend" id="postweekend" >
+                                                <input type="text" name="weekdayone" id="weekdayone">
+                                                <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                                <input type="text" name="weekdaythree" id="weekdaythree">
+                                                <input type="text" name="humpday" id="humpday">
+                                                <input type="text" name="preweekend" id="preweekend">
+                                                <input type="text" name="weekend" id="weekend">
+                                            </div>
+                                        </section>
+                                
+                                </div>
+                                        
+                                        
+                                        <!-- This is the second week of the workout form -->
+                                        <div id="weekTwo"> 
+                                            <hr>
+                                            <h2>Week 2</h2> 
+                                            <!-- Listing them like this makes them horizontal. -->
+                                            <div class="daystraining">
+                                                <label for="days">&nbsp; </label>
+                                                <label for="sunday">Sunday</label>
+                                                <label for="monday">Monday</label>
+                                                <label for="tuesday">Tuesday</label>
+                                                <label for="wednesday">Wednesday</label>
+                                                <label for="thursday">Thursday</label>
+                                                <label for="friday">Friday</label>
+                                                <label for="saturday">Saturday</label>
+                                            </div>
+                                            <div class="exercise2">
+                                                <label for="rowOne">Enter Exercise Here:</label>
+                                                <input type="text" name="postweekend" id="postweekend" >
+                                                <input type="text" name="weekdayone" id="weekdayone" >
+                                                <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                                <input type="text" name="weekdaythree" id="weekdaythree">
+                                                <input type="text" name="humpday" id="humpday">
+                                                <input type="text" name="preweekend" id="preweekend">
+                                                <input type="text" name="weekend" id="weekend">
+                                            </div>
+                                            <div class="weight2">
+                                                <label for="rowTwo">Enter Weight Here:</label>
+                                                <input type="text" name="postweekend" id="postweekend" >
+                                                <input type="text" name="weekdayone" id="weekdayone">
+                                                <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                                <input type="text" name="weekdaythree" id="weekdaythree">
+                                                <input type="text" name="humpday" id="humpday">
+                                                <input type="text" name="preweekend" id="preweekend">
+                                                <input type="text" name="weekend" id="weekend">
+                                            </div>
+                                            <div id="closeToEnd">
+                                                <div class="reps2">
+                                                    <label for="rowThree">Enter Reps Here:</label>
+                                                    <input type="text" name="postweekend" id="postweekend" >
+                                                    <input type="text" name="weekdayone" id="weekdayone">
+                                                    <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                                    <input type="text" name="weekdaythree" id="weekdaythree">
+                                                    <input type="text" name="humpday" id="humpday">
+                                                    <input type="text" name="preweekend" id="preweekend">
+                                                    <input type="text" name="weekend" id="weekend">
+                                                </div>
+                                            </div>
+                                            <div id="lastRow">
+                                                <div class="sets2">
+                                                    <label for="rowFour">Enter Sets Here:</label>
+                                                    <input type="text" name="postweekend" id="postweekend" >
+                                                    <input type="text" name="weekdayone" id="weekdayone">
+                                                    <input type="text" name="weekdaytwo" id="weekdaytwo">
+                                                    <input type="text" name="weekdaythree" id="weekdaythree">
+                                                    <input type="text" name="humpday" id="humpday">
+                                                    <input type="text" name="preweekend" id="preweekend">
+                                                    <input type="text" name="weekend" id="weekend">
+                                                   
+                                                </div>
+                                                
+                                            </div>
+                                            
+
+                                            </div>
+                                            <div id="new-week-container"></div>
+                                            
+                                            <script>
+                                     
+                                               
+                                                //Select some elements once outside of the function since these will never change
+                                                // 'const' is for variable that can/will not be used again later on in the code
+                                                // document.querySelector() returns the first Element within the document that matches 
+                                                //specified selector or group of selectors. If no matches are found, null is returned
+
+                                                const secondWeek = document.querySelector("#weekTwo");
+                                                const newWeekContainer = document.querySelector("#new-week-container");
+                                               
+                                                
+                                                // 'let' declares re-assignable, block-scoped local variables, optionally
+                                                // initializing each to a value
+                                                //Define the current number of weeks shown in form
+                                                let currentNumberOfWeeks = 2;
+                                                function plusContent(){
+                                                    //make a copy of the second week
+                                                    const newWeek = secondWeek.cloneNode(true);
+
+                                                    //Remove the ID for the cloned week since the same ID would not
+                                                    // be allowed to exist more than once in a document!
+                                                    newWeek.attributes.removeNamedItem("id");
+                                                    
+                                                     
+                                                     //Increase the number of weeks
+                                                    //Incrementation 
+                                                    currentNumberOfWeeks++;
+
+                                                    //Find the header inside the new week and update the text
+                                                    newWeek.querySelector("h2").textContent="Week " + currentNumberOfWeeks;
+
+                                                   
+                                                    
+                                                    //Put the new week into the container 
+                                                    newWeekContainer.appendChild(newWeek);
+                                                    
+                                              
+
+                                                }
+                                                </script>
+                                
+                                        </div>
+                                       
+                                           
+                            </div>
+                           
+                <div>
+                
+            </form>
+           
+            
+        </div>
+          
+    </body>
+    <footer>
+        <small>&copy; 2023-2024. Created and Designed By Belita Ross</small>
+    </footer>
+
+</html>
