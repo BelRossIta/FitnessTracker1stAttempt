@@ -17,11 +17,13 @@
          <script src="javascript/baseJavascript.js" defer></script>
     </head>
     <body>
-        
+    <section id="banner">
+       <p>THIS WEBSITE IS STILL IN DEVELOPMENT! DO NOT TAKE WHAT YOU SEE AS THE FINAL PRODUCT!</p>
+    </section>    
     <header ><h1>Training Tracker</h1></header>
     <div class="pillnav">
         <a href="index.html">Home</a>
-        <a href="trainingtracker.html">Training Tracker</a>
+        <a href="trainingtrackerFinal.html">Training Tracker</a>
         <a href="weighttracker.html">Weight Tracker</a>
     </div>
         <div class="main">
@@ -103,7 +105,7 @@
                                             </div>
                                             <div class="sets">
                                                 <label for="rowFour">Enter Sets Here:</label>
-                                                <input type="text" name="postweekend" id="postweekend" ">
+                                                <input type="text" name="postweekend" id="postweekend" >
                                                 <input type="text" name="weekdayone" id="weekdayone">
                                                 <input type="text" name="weekdaytwo" id="weekdaytwo">
                                                 <input type="text" name="weekdaythree" id="weekdaythree">
@@ -182,48 +184,7 @@
                                             </div>
                                             <div id="new-week-container"></div>
                                             
-                                            <script>
-                                     
-                                               
-                                                //Select some elements once outside of the function since these will never change
-                                                // 'const' is for variable that can/will not be used again later on in the code
-                                                // document.querySelector() returns the first Element within the document that matches 
-                                                //specified selector or group of selectors. If no matches are found, null is returned
-
-                                                const secondWeek = document.querySelector("#weekTwo");
-                                                const newWeekContainer = document.querySelector("#new-week-container");
-                                               
-                                                
-                                                // 'let' declares re-assignable, block-scoped local variables, optionally
-                                                // initializing each to a value
-                                                //Define the current number of weeks shown in form
-                                                let currentNumberOfWeeks = 2;
-                                                function plusContent(){
-                                                    //make a copy of the second week
-                                                    const newWeek = secondWeek.cloneNode(true);
-
-                                                    //Remove the ID for the cloned week since the same ID would not
-                                                    // be allowed to exist more than once in a document!
-                                                    newWeek.attributes.removeNamedItem("id");
-                                                    
-                                                     
-                                                     //Increase the number of weeks
-                                                    //Incrementation 
-                                                    currentNumberOfWeeks++;
-
-                                                    //Find the header inside the new week and update the text
-                                                    newWeek.querySelector("h2").textContent="Week " + currentNumberOfWeeks;
-
-                                                   
-                                                    
-                                                    //Put the new week into the container 
-                                                    newWeekContainer.appendChild(newWeek);
-                                       
-
-                                              
-
-                                                }
-                                                </script>
+                                           
                                 
                                         </div>
                                        
