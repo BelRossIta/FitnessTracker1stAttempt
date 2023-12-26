@@ -5,7 +5,10 @@
 /* #4CB5AE-VERDIGRIS */
 
 /*---------This is the base design of page-------------*/
-
+*{
+    margin:0px;
+    padding:0px;
+}
 h1{
     text-align: center;
 }
@@ -13,7 +16,32 @@ h1{
 h2{
     text-align: center;
 }
+/* ------------------Animated banner------------------ */
+#banner{
+    background-color: black;
+    color:antiquewhite;
+    padding: 0.7rem;
+    
+}
 
+#banner p{
+    /* @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+    animation: 13s ease-in-out 3s infinite reverse running slide;
+}
+
+@keyframes slide {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width:100%
+    }
+
+}
+/* back to basic styling */
 header{
     border: 5px double rgb(20, 20, 97);
     background-color: #81D6E3 ;
