@@ -46,4 +46,4 @@ function reset(){
 }
 
 //event listener
-// resetButton.addEventListener('click', reset, false);
+resetButton.addEventListener('click', reset, false);
