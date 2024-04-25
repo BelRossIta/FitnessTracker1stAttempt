@@ -42,3 +42,6 @@ newWeekContainer.appendChild(newWeek);
 function reset(){
   secondWeek.value='';  
 }
+
+//event listener
+resetButton.addEventListener('click', reset, false);
