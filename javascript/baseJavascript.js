@@ -36,3 +36,9 @@ newWeek.querySelector("h2").textContent="Week " + currentNumberOfWeeks;
 newWeekContainer.appendChild(newWeek);
 
 }
+
+// Working on reset button
+
+function reset(){
+  secondWeek.value='';  
+}
