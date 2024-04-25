@@ -40,7 +40,9 @@ newWeekContainer.appendChild(newWeek);
 // Working on reset button
 
 function reset(){
-  secondWeek.value='';  
+  let newCon = getElementById('new-week-container');
+
+  newCon.value="";
 }
 
 //event listener
