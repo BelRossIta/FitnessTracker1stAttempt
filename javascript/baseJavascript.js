@@ -40,10 +40,5 @@ newWeekContainer.appendChild(newWeek);
 // Working on reset button
 
 function reset(){
-  let newCon = getElementById('new-week-container');
-
-  newCon.value="";
+  newWeekContainer.remove();
 }
-
-//event listener
-resetButton.addEventListener('click', reset, false);
