@@ -39,6 +39,6 @@ newWeekContainer.appendChild(newWeek);
 
 // Working on reset button
 
-function reset(){
+function removeNewWeek(){
   newWeekContainer.remove();
 }
