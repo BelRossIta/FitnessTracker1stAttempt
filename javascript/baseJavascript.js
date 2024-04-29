@@ -38,15 +38,15 @@ newWeekContainer.appendChild(newWeek);
 }
 
 // Working on reset button
-
+const defaultWeeks = 2;
 function removeNewWeek(){
   // newWeekContainer.remove();
   // using while loop from chatGPT
   // remove all weeks beyond the default number of weeks
-  while (newWeekContainer.children.length > currentNumberOfWeeks){
+  while (newWeekContainer.children.length > defaultWeeks){
     newWeekContainer.removeChild(newWeekContainer.lastChild);
   }
 
   //should reset the current number of weeks to default
-  
+  currentNumberOfWeeks = defaultWeeks;
 }
