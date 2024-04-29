@@ -11,7 +11,7 @@ const newWeekContainer = document.querySelector("#new-week-container");
 // 'let' declares re-assignable, block-scoped local variables, optionally
  // initializing each to a value
 //Define the current number of weeks shown in form
-const currentNumberOfWeeks = 2;
+let currentNumberOfWeeks = 2;
 function plusContent(){
 //make a copy of the second week
 const newWeek = secondWeek.cloneNode(true);
