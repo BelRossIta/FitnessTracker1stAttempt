@@ -11,7 +11,7 @@ const newWeekContainer = document.querySelector("#new-week-container");
 // 'let' declares re-assignable, block-scoped local variables, optionally
  // initializing each to a value
 //Define the current number of weeks shown in form
-let currentNumberOfWeeks = 2;
+const currentNumberOfWeeks = 2;
 function plusContent(){
 //make a copy of the second week
 const newWeek = secondWeek.cloneNode(true);
@@ -40,5 +40,13 @@ newWeekContainer.appendChild(newWeek);
 // Working on reset button
 
 function removeNewWeek(){
-  newWeekContainer.remove();
+  // newWeekContainer.remove();
+  // using while loop from chatGPT
+  // remove all weeks beyond the default number of weeks
+  while (newWeekContainer.children.length > currentNumberOfWeeks){
+    newWeekContainer.removeChild(newWeekContainer.lastChild);
+  }
+
+  //should reset the current number of weeks to default
+  
 }
