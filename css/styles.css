@@ -169,9 +169,14 @@ form{
 
 }
 
-.topbutton2{
+.topbutton2 {
     float:right;
-    margin-top: -1em
+    margin-top: -1em;
+}
+
+.removeBTN {
+    text-align: right;
+    margin-top: 0.5em;
 }
 
 .removeBTN{

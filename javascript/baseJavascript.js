@@ -6,8 +6,7 @@
 const secondWeek = document.querySelector("#weekTwo");
 
 const newWeekContainer = document.querySelector("#new-week-container");
-                                               
-                                                
+
 // 'let' declares re-assignable, block-scoped local variables, optionally
  // initializing each to a value
 //Define the current number of weeks shown in form
@@ -37,7 +36,7 @@ newWeekContainer.appendChild(newWeek);
 
 }
 
-// Working on reset button
+//------------Reset button
 
 const defaultWeeks = 2;
 function resetWeeks(){
@@ -56,3 +55,4 @@ function resetWeeks(){
  newWeekContainer.innerHTML = ''; //clears the content.
  currentNumberOfWeeks = defaultWeeks;
 }
+
