@@ -179,6 +179,11 @@ form{
     margin-top: 0.5em;
 }
 
+.removeBTN{
+    text-align: right;
+    margin-top: 0.5em;
+}
+
 /* ------------creating and styling navbar--------------- */
 
 

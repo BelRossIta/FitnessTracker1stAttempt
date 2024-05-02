@@ -38,7 +38,21 @@ newWeekContainer.appendChild(newWeek);
 
 //------------Reset button
 
-function removeNewWeek(){
-    newWeekContainer.remove();
+const defaultWeeks = 2;
+function resetWeeks(){
+ //check if container exists, if not, recreate it
+ if(!document.contains(newWeekContainer)) {
+  newWeekContainer = document.createElement('div');  //make sure to give it the original id or class
+  newWeekContainer.id ='newWeekContainer'; //or append to whichever parent it belongs
+  document.body.appendChild(newWeekContainer);
+ }
 
+ while (newWeekContainer.children.length > defaultWeeks){
+   newWeekContainer.removeChild(newWeekContainer.lastChild);
+ }
+
+ //clear the container and resert weeks count
+ newWeekContainer.innerHTML = ''; //clears the content.
+ currentNumberOfWeeks = defaultWeeks;
 }
+
